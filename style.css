@@ -1,0 +1,52 @@
+body 
+{
+    background-image: url(bg3.jpg);
+    font-weight: bold;
+}
+
+h1 
+{
+    font-size: 75px;
+    font-family: 'Rubik Iso', cursive;
+    background: lightgreen;
+}
+
+h3 
+{
+    font-size: 25px;
+    font-family: 'Rubik Iso', cursive;
+    background: lightpink;
+}
+
+body 
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer
+  {
+      background: lightblue;
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+      padding: 5px;
+      font-weight: bold;
+  }
+
+  canvas
+   {
+height: 300px;
+width: 300px;
+border: 0.5px solid darkblue;
+animation-name: shadow;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+  }
+
+@keyframes shadow {
+
+    from {box-shadow: 3px 3px 50px red};
+    to {box-shadow: 3px 3px 50px darkgreen};
+}
